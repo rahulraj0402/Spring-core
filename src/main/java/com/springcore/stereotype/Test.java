@@ -13,7 +13,7 @@ public class Test {
 		System.out.println(stud);
 		System.out.println(stud.getAddress());
 		System.out.println(stud.getAddress().getClass().getName());
-		
+		System.out.println();
 		
 		
 		
