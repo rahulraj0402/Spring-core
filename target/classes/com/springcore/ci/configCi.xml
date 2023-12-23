@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+ 
+ 
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           https://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd">
+          
+         
+          
+          <bean class="com.springcore.ci.Certi" name="certiRef">
+          
+          		<constructor-arg value="java developer"/>
+          
+          </bean>
+          
+          <bean class="com.springcore.ci.Person" name="person1" >
+         
+          		<!-- <constructor-arg>  <value>Rahul raj</value>  </constructor-arg> -->
+          		<constructor-arg value="rahul"/>
+          		<constructor-arg value="101" type="int"/>
+          		<constructor-arg ref="certiRef"/>
+          		<constructor-arg>
+          			
+          			<list>
+          			
+          			  <value>8789251425</value>
+          			  <value>9386123722</value>
+          			  <value>9988772233</value>
+          			 
+          		    </list>
+          		
+          		</constructor-arg>
+          		
+          
+          </bean>
+          
+          <bean class="com.springcore.ci.Addition" name="addition">
+          
+          	<constructor-arg value="12" type="int" index="0"/>
+          	<constructor-arg value="909" type="int" index="1"/>
+          
+          </bean>
+
+
+
+      <!-- more bean definitions go here -->
+  </beans>      
